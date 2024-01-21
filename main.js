@@ -13,7 +13,7 @@ var menu = {
   },
   getRandomDishFromCourse(courseName) {
     var dishes = this.courses[courseName]
-    let randomNumber = Math.floor(Math.random * dishes.length)
+    let randomNumber = Math.floor(Math.random() * dishes.length)
     return dishes[randomNumber]
   },
   generateRandomMeal() {
